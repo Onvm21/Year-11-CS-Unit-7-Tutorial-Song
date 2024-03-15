@@ -22,7 +22,8 @@ public class Song {
         int length = a.size();
         for(int i = 0; i<length; i++) {
             String word = a.get(i);
-            word.toLowerCase();
+            System.out.println(word);
+            word = word.toLowerCase();
 
             if(!people.contains(word)){
                 count += 1;
@@ -32,6 +33,7 @@ public class Song {
             }
 
         }
+        System.out.println(count);
         return count;
     }
 
